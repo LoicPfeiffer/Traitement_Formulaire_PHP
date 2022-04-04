@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+   <meta charset="utf-8">
+   <title>Formulaire</title>
+   <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+
+<body>
+   <form method="get" action="traitement.php">
+      <label for="pseudo">Votre pseudo :</label>
+      <input type="text" size="12" name="pseudo" id="pseudo">
+      <br>
+      <label for="p1">Votre mot de passe :</label>
+      <input type="password" name="p1" size="50" id="p1">
+      <br>
+      <label for="p2">Ressaisir votre mot de passe : </label>
+      <input type="password" size="50" name="p2" id="p2">
+      <br>
+      <br>OS préféré :
+      <br><input type="radio" name="OS" value="W11">Windows 11
+      <br><input type="radio" name="OS" value="W10">Windows 10
+      <br><input type="radio" name="OS" value="WOld">Windows &lt; 10
+      <br><input type="radio" name="OS" value="OS">MacOS
+      <br><input type="radio" name="OS" value="Linux">Linux
+      <br><input type="radio" name="OS" value="Other">Autre
+      <br>
+      <br>Vous possédez : <br>
+      <input type="checkbox" name="appareils[]" value="bureau">Un ordinateur de bureau
+      <br><input type="checkbox" name="appareils[]" value="port">Un portable
+      <br><input type="checkbox" name="appareils[]" value="netb">Un netbook
+      <br><input type="checkbox" name="appareils[]" value="tabl">Une tablette
+      <p><label for="profession">Votre profession : </label></p>
+      <select name="profession" size="6" id="profession">
+         <option value="cho">Chômeur</option>
+         <option value="etu">Etudiant</option>
+         <option value="fon">Fonctionnaire</option>
+         <option value="priv">Privé</option>
+         <option value="retr">Retraité</option>
+         <option value="aut">Autre</option>
+      </select>
+      <br>
+      <input type="submit" value="S'inscrire" name="submit" />
+      <input type="reset" value="Effacer" />
+      <br>
+   </form>
+</body>
+
+</html>
